@@ -1,1 +1,1 @@
-# Minimal Fedora with Gnome install script
+# Minimal Fedora install script.
