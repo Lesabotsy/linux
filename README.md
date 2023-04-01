@@ -1,1 +1,1 @@
-# Minimal Fedora install script.
+# Minimal Fedora installation script.
