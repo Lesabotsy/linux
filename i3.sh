@@ -68,13 +68,11 @@ dnf --setopt=install_weak_deps=False --best install -y lxappearance \
 
 # MISC
 # xorg.conf
-cd /etc/X11
 echo "Section \"Device\"
         Identifier  \"Intel Graphics\"
         Driver      \"intel\"
         Option      \"Backlight\" \"intel_backlight\"
-EndSection" >> xorg.conf
-cd
+EndSection" >> /etc/X11/xorg.conf
 
 # .xinitrc
 echo "#!/bin/sh              
