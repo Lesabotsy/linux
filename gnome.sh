@@ -49,9 +49,6 @@ dnf --setopt=install_weak_deps=False --best install -y python3-pip \
                                                        gcc gcc-c++ gdb valgrind \
                                                        nodejs npm
 
-# adw-gtk3
-wget https://github.com/lassekongo83/adw-gtk3/releases/download/v4.4/adw-gtk3v4-4.tar.xz
-
 # Starship
 curl -sS https://starship.rs/install.sh | sh
 
