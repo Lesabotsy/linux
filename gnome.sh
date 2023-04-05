@@ -34,6 +34,7 @@ dnf --setopt=install_weak_deps=False --best install -y aria2 \
 						       openssl \
 						       python3-streamlink \
 						       ripgrep \
+						       transmission \
                                                        unrar \
                                                        vlc \
                                                        yt-dlp \
