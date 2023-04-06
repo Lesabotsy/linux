@@ -42,7 +42,6 @@ dnf --setopt=install_weak_deps=False --best install -y aria2 \
 						       
 # MTP Android dependencies
 dnf --setopt=install_weak_deps=False --best install -y gvfs-mtp \
-						       nautilus-gsconnect \
 						       simple-mtpfs
 
 # Chrome
