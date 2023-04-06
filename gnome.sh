@@ -40,7 +40,7 @@ dnf --setopt=install_weak_deps=False --best install -y aria2 \
                                                        yt-dlp \
 						       yt-dlp-fish-completion
 						       
-# Needed to connect android phone
+# MTP Android dependencies
 dnf --setopt=install_weak_deps=False --best install -y gvfs-mtp \
 						       nautilus-gsconnect \
 						       simple-mtpfs
