@@ -40,7 +40,7 @@ dnf --setopt=install_weak_deps=False --best install -y aria2 \
                                                        yt-dlp \
 						       yt-dlp-fish-completion
 						       
-# MTP Android dependencies
+# MTP Android Dependencies ???
 dnf --setopt=install_weak_deps=False --best install -y gvfs-mtp \
 						       simple-mtpfs
 
