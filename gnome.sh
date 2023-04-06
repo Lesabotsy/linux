@@ -39,6 +39,11 @@ dnf --setopt=install_weak_deps=False --best install -y aria2 \
                                                        vlc \
                                                        yt-dlp \
 						       yt-dlp-fish-completion
+						       
+# Needed to connect android phone
+dnf --setopt=install_weak_deps=False --best install -y gvfs-mtp \
+						       nautilus-gsconnect \
+						       simple-mtpfs
 
 # Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
