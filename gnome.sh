@@ -49,7 +49,7 @@ dnf --setopt=install_weak_deps=False --best install -y gvfs-mtp \
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 dnf install -y google-chrome-stable_current_x86_64.rpm
 
-# Programming languages
+# Programming Languages
 dnf --setopt=install_weak_deps=False --best install -y python3-pip \
                                                        java-17-openjdk-devel \
                                                        gcc gcc-c++ gdb valgrind \
@@ -58,7 +58,7 @@ dnf --setopt=install_weak_deps=False --best install -y python3-pip \
 # Starship
 curl -sS https://starship.rs/install.sh | sh
 
-# Removing some packages
+# Removing some Packages
 dnf remove -y nano vim-minimal
 
 # Reboot
