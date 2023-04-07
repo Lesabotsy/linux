@@ -27,28 +27,28 @@ dnf --setopt=install_weak_deps=False --best install -y acpi \
                                                        redshift \
                                                        rofi \
                                                        xbacklight \
-                                                       xrandr \
+                                                       xrandr
                                                        
-dnf --setopt=install_weak_deps=False --best install -y kitty \
-                                                       neovim \
-                                                       fish \
-                                                       ranger \
-                                                       unrar \
+dnf --setopt=install_weak_deps=False --best install -y aria2 \
+                                                       bat \
                                                        curl \
-                                                       aria2 \
+                                                       exa \
+                                                       fd-find \
+                                                       ffmpeg \
+                                                       fish \
+                                                       fzf \
+                                                       kitty \
+                                                       mpv \
+                                                       mupdf \
+                                                       neovim \
+                                                       openssl \
+                                                       ripgrep \
+                                                       ranger \
+                                                       transmission \
+                                                       unrar \
+                                                       xclip \
                                                        yt-dlp \
                                                        yt-dlp-fish-completion \
-                                                       ffmpeg \
-                                                       xclip \
-                                                       openssl \
-                                                       fzf \
-                                                       fd-find \
-                                                       bat \
-                                                       ripgrep \
-                                                       exa \
-                                                       mupdf \
-                                                       mpv \
-                                                       transmission
                                                        
 # CHROME
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
@@ -61,10 +61,10 @@ dnf --setopt=install_weak_deps=False --best install -y python3-pip \
                                                        nodejs npm
 
 # RICE
-dnf --setopt=install_weak_deps=False --best install -y lxappearance \
-                                                       arc-theme \
-                                                       papirus-icon-theme \
-                                                       breeze-cursor-theme
+dnf --setopt=install_weak_deps=False --best install -y arc-theme \
+                                                       breeze-cursor-theme \
+                                                       lxappearance \
+                                                       papirus-icon-theme
 
 # MISC
 # xorg.conf
