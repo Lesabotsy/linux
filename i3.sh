@@ -13,21 +13,21 @@ dnf --setopt=install_weak_deps=False --best install -y i3 \
                                                        @base-x \
                                                        @fonts
                                                        
-dnf --setopt=install_weak_deps=False --best install -y NetworkManager \
-                                                       NetworkManager-wifi \
+dnf --setopt=install_weak_deps=False --best install -y acpi \
+                                                       compton \
+                                                       feh \
                                                        iwl7260-firmware \
-                                                       power-profiles-daemon \
-                                                       acpi \
-                                                       xrandr \
+                                                       NetworkManager \
+                                                       NetworkManager-wifi \
+                                                       pavucontrol \
                                                        pipewire \
                                                        pipewire-pulseaudio \
+                                                       power-profiles-daemon \
                                                        pulseaudio-utils \
-                                                       pavucontrol \
-                                                       compton \
-                                                       xbacklight \
                                                        redshift \
                                                        rofi \
-                                                       feh
+                                                       xbacklight \
+                                                       xrandr \
                                                        
 dnf --setopt=install_weak_deps=False --best install -y kitty \
                                                        neovim \
