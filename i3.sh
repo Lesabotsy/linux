@@ -8,7 +8,7 @@ dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-
 
 # BASE
 dnf --setopt=install_weak_deps=False --best install -y @base-x \
-                                                       @fonts
+                                                       @fonts \
                                                        dmenu \
                                                        i3 \
                                                        i3status
@@ -48,7 +48,7 @@ dnf --setopt=install_weak_deps=False --best install -y aria2 \
                                                        unrar \
                                                        xclip \
                                                        yt-dlp \
-                                                       yt-dlp-fish-completion \
+                                                       yt-dlp-fish-completion
                                                        
 # CHROME
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
