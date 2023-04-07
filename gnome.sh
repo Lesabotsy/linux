@@ -6,9 +6,9 @@ dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-
 
 # Base
 dnf --setopt=install_weak_deps=False --best install -y @base-x \
+						       @fonts \
 						       @"Common NetworkManager Submodules" \
-						       @"Hardware Support" \
-						       @fonts
+						       @"Hardware Support"
 
 dnf --setopt=install_weak_deps=False --best install -y gnome-shell \
 						       gdm \
