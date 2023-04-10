@@ -16,7 +16,9 @@ dnf --setopt=install_weak_deps=False --best install -y NetworkManager-bluetooth 
 dnf --setopt=install_weak_deps=False --best install -y @base-x \
 						       gnome-shell \
 						       gdm \
-                                                       power-profiles-daemon
+						       pipewire-pulseaudio \
+                                                       power-profiles-daemon \
+						       pulseaudio-utils
 # Applications
 dnf --setopt=install_weak_deps=False --best install -y aria2 \
                                                        bat \
