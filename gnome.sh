@@ -9,7 +9,7 @@ dnf --setopt=install_weak_deps=False --best install -y intel-gpu-firmware \
 						       intel-media-driver \
 						       iwl7260-firmware
 
-# Networks
+# Networking
 dnf --setopt=install_weak_deps=False --best install -y NetworkManager-bluetooth \
 						       NetworkManager-wifi
 
