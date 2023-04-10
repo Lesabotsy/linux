@@ -17,8 +17,7 @@ dnf --setopt=install_weak_deps=False --best install -y @base-x \
 						       gnome-shell \
 						       gdm \
 						       pipewire-pulseaudio \
-                                                       power-profiles-daemon \
-						       pulseaudio-utils
+                                                       power-profiles-daemon
 # Applications
 dnf --setopt=install_weak_deps=False --best install -y aria2 \
                                                        bat \
