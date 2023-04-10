@@ -6,9 +6,13 @@ mkdir /media/usb/
 dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
                https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
+# HARDWARE SUPPORT
+dnf --setopt=install_weak_deps=False --best install -y intel-gpu-firmware \
+                                                       intel-media-driver \
+                                                       iwl7260-firmware
+                   
 # BASE
 dnf --setopt=install_weak_deps=False --best install -y @base-x \
-                                                       @fonts \
                                                        dmenu \
                                                        i3 \
                                                        i3status
@@ -16,7 +20,6 @@ dnf --setopt=install_weak_deps=False --best install -y @base-x \
 dnf --setopt=install_weak_deps=False --best install -y acpi \
                                                        compton \
                                                        feh \
-                                                       iwl7260-firmware \
                                                        NetworkManager \
                                                        NetworkManager-wifi \
                                                        pavucontrol \
