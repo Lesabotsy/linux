@@ -16,7 +16,6 @@ dnf --setopt=install_weak_deps=False --best install -y NetworkManager-bluetooth 
 dnf --setopt=install_weak_deps=False --best install -y @base-x \
 						       @fonts \
 						       gnome-shell \
-						       gdm \
 						       pipewire-pulseaudio \
                                                        power-profiles-daemon
 # Applications
