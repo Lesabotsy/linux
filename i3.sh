@@ -12,6 +12,7 @@ dnf --setopt=install_weak_deps=False --best install -y intel-media-driver \
                    
 # BASE
 dnf --setopt=install_weak_deps=False --best install -y @base-x \
+                                                       @fonts \
                                                        dmenu \
                                                        i3 \
                                                        i3status
