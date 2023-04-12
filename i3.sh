@@ -25,7 +25,7 @@ dnf --setopt=install_weak_deps=False --best install -y acpi \
                                                        pavucontrol \
                                                        pipewire \
                                                        pipewire-pulseaudio \
-                                                       power-profiles-daemon 
+                                                       power-profiles-daemon \
                                                        redshift \
                                                        rofi \
                                                        xbacklight \
