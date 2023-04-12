@@ -28,7 +28,8 @@ dnf --setopt=install_weak_deps=False --best install -y acpi \
                                                        power-profiles-daemon \
                                                        redshift \
                                                        rofi \
-                                                       xbacklight
+                                                       xbacklight \
+                                                       xrandr
                                                        
 dnf --setopt=install_weak_deps=False --best install -y aria2 \
                                                        bat \
