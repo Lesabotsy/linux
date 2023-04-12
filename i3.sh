@@ -22,6 +22,7 @@ dnf --setopt=install_weak_deps=False --best install -y acpi \
                                                        NetworkManager \
                                                        NetworkManager-wifi \
                                                        pavucontrol \
+                                                       picom \
                                                        pipewire \
                                                        pipewire-pulseaudio \
                                                        power-profiles-daemon \
