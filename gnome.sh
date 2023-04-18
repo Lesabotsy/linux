@@ -44,10 +44,6 @@ dnf --setopt=install_weak_deps=False --best install -y aria2 \
                                                        vlc \
                                                        yt-dlp \
 						       yt-dlp-fish-completion
-						       
-# MTP (Android Phone Dependencies)
-dnf --setopt=install_weak_deps=False --best install -y gvfs-mtp \
-						       simple-mtpfs
 
 # Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
