@@ -33,6 +33,7 @@ dnf --setopt=install_weak_deps=False --best install -y aria2 \
 						       gnome-extensions-app \
 						       gnome-browser-connector \
                                                        kitty \
+						       mupdf \
                                                        nautilus \
                                                        neovim \
 						       openssl \
