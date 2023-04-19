@@ -4,16 +4,17 @@
 dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
                https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-# Nvidia Drivers
-dnf --setopt=install_weak_deps=False --best install -y akmod-nvidia \
-						       xorg-x11-drv-nvidia-cuda
-
 # Gnome Shell
 dnf --setopt=install_weak_deps=False --best install -y @base-x \
 						       @fonts \
 						       gnome-shell \
 						       pipewire-pulseaudio \
                                                        power-profiles-daemon
+
+# Nvidia Drivers
+dnf --setopt=install_weak_deps=False --best install -y akmod-nvidia \
+						       xorg-x11-drv-nvidia-cuda
+						       
 # Applications
 dnf --setopt=install_weak_deps=False --best install -y aria2 \
                                                        bat \
