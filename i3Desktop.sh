@@ -11,18 +11,13 @@ dnf --setopt=install_weak_deps=False --best install -y @base-x \
                                                        @fonts \
                                                        dmenu \
                                                        i3 \
-                                                       i3status \
-                                                       i3lock \
-                                                       xss-lock
+                                                       i3status
                                                        
 # HARDWARE SUPPORT
 dnf --setopt=install_weak_deps=False --best install -y akmod-nvidia \
                                                        xorg-x11-drv-nvidia-cuda
                                                        
-dnf --setopt=install_weak_deps=False --best install -y acpi \
-                                                       feh \
-                                                       NetworkManager \
-                                                       NetworkManager-wifi \
+dnf --setopt=install_weak_deps=False --best install -y feh \
                                                        pavucontrol \
                                                        picom \
                                                        pipewire \
@@ -30,8 +25,7 @@ dnf --setopt=install_weak_deps=False --best install -y acpi \
                                                        power-profiles-daemon \
                                                        redshift \
                                                        rofi \
-                                                       xbacklight \
-                                                       xrandr
+                                                       xbacklight
                                                        
 dnf --setopt=install_weak_deps=False --best install -y aria2 \
                                                        bat \
