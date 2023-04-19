@@ -9,6 +9,9 @@ dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-
 # HARDWARE SUPPORT
 dnf --setopt=install_weak_deps=False --best install -y intel-media-driver \
                                                        iwl7260-firmware
+# Nvidia Drivers
+dnf --setopt=install_weak_deps=False --best install -y akmod-nvidia \
+                                                       xorg-x11-drv-nvidia-cuda
                    
 # BASE
 dnf --setopt=install_weak_deps=False --best install -y @base-x \
