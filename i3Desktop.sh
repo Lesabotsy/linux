@@ -5,10 +5,6 @@ mkdir /media/usb/
 # RPM FUSION
 dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
                https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-
-# HARDWARE SUPPORT
-dnf --setopt=install_weak_deps=False --best install -y akmod-nvidia \
-                                                       xorg-x11-drv-nvidia-cuda
                                                        
 # BASE
 dnf --setopt=install_weak_deps=False --best install -y @base-x \
@@ -18,6 +14,10 @@ dnf --setopt=install_weak_deps=False --best install -y @base-x \
                                                        i3status \
                                                        i3lock \
                                                        xss-lock
+                                                       
+# HARDWARE SUPPORT
+dnf --setopt=install_weak_deps=False --best install -y akmod-nvidia \
+                                                       xorg-x11-drv-nvidia-cuda
                                                        
 dnf --setopt=install_weak_deps=False --best install -y acpi \
                                                        feh \
