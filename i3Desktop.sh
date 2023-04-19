@@ -24,8 +24,7 @@ dnf --setopt=install_weak_deps=False --best install -y feh \
                                                        pipewire-pulseaudio \
                                                        power-profiles-daemon \
                                                        redshift \
-                                                       rofi \
-                                                       xbacklight
+                                                       rofi
                                                        
 dnf --setopt=install_weak_deps=False --best install -y aria2 \
                                                        bat \
