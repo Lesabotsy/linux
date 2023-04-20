@@ -22,6 +22,7 @@ dnf --setopt=install_weak_deps=False --best install -y @base-x \
 dnf --setopt=install_weak_deps=False --best install -y aria2 \
                                                        bat \
 						       breeze-cursor-theme \
+						       btop \
                                                        curl \
 						       eog \
 						       exa \
