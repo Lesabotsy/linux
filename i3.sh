@@ -15,9 +15,7 @@ dnf --setopt=install_weak_deps=False --best install -y @base-x \
                                                        @fonts \
                                                        dmenu \
                                                        i3 \
-                                                       i3status \
-                                                       i3lock \
-                                                       xss-lock
+                                                       i3status
                                                        
 dnf --setopt=install_weak_deps=False --best install -y acpi \
                                                        feh \
