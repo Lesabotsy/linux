@@ -10,10 +10,6 @@ dnf --setopt=install_weak_deps=False --best install -y @"base-x" \
 						       @"Fonts" \
 						       @"Hardware Support" \
 						       @"Multimedia" \
-
-# Gnome Shell
-dnf --setopt=install_weak_deps=False --best install -y @base-x \
-						       @fonts \
 						       gnome-shell \
                                                        power-profiles-daemon
 # Applications
