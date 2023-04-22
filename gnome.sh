@@ -9,7 +9,7 @@ dnf --setopt=install_weak_deps=False --best install -y @base-x \
 						       @"Common NetworkManager Submodules" \
 						       @Fonts \
 						       @"Hardware Support" \
-						       @"Multimedia" \
+						       @Multimedia \
 						       gnome-shell \
                                                        power-profiles-daemon
 # Applications
