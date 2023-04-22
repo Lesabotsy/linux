@@ -32,7 +32,6 @@ dnf --setopt=install_weak_deps=False --best install -y aria2 \
                                                        nautilus \
                                                        neovim \
 						       openssl \
-						       python3-streamlink \
 						       ripgrep \
 						       transmission \
                                                        unrar \
