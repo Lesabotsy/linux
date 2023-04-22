@@ -4,19 +4,17 @@
 dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
                https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-# Hardware Support
-dnf --setopt=install_weak_deps=False --best install -y intel-media-driver \
-						       iwl7260-firmware
-
-# Networking
-dnf --setopt=install_weak_deps=False --best install -y NetworkManager-bluetooth \
-						       NetworkManager-wifi
+# Main
+dnf --setopt=install_weak_deps=False --best install -y @"base-x" \
+						       @"Common NetworkManager Submodules" \
+						       @"Fonts" \
+						       @"Hardware Support" \
+						       @"Multimedia" \
 
 # Gnome Shell
 dnf --setopt=install_weak_deps=False --best install -y @base-x \
 						       @fonts \
 						       gnome-shell \
-						       pipewire-pulseaudio \
                                                        power-profiles-daemon
 # Applications
 dnf --setopt=install_weak_deps=False --best install -y aria2 \
