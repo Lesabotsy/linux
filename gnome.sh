@@ -5,9 +5,9 @@ dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-
                https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # Main
-dnf --setopt=install_weak_deps=False --best install -y @"base-x" \
+dnf --setopt=install_weak_deps=False --best install -y @base-x \
 						       @"Common NetworkManager Submodules" \
-						       @"Fonts" \
+						       @Fonts \
 						       @"Hardware Support" \
 						       @"Multimedia" \
 						       gnome-shell \
