@@ -15,6 +15,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	NetworkManager-bluetooth \
 	NetworkManager-wifi
 
+# Plasma
 dnf --setopt=install_weak_deps=False --best install -y \
 	bluedevil \
 	breeze-icon-theme \
