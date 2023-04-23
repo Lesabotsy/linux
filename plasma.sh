@@ -17,15 +17,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
 
 # Plasma
 dnf --setopt=install_weak_deps=False --best install -y \
-	plasma-desktop \
-	plasma-workspace \
-	plasma-workspace-wallpapers \
-	qt5-qtbase-gui \
-	sddm \
-	sddm-breeze \
-	sddm-kcm \
-	NetworkManager-config-connectivity-fedora \
-	PackageKit-command-not-found \
 	abrt-desktop \
 	adwaita-gtk2-theme \
 	akregator \
@@ -84,11 +75,14 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	kwin \
 	kwrite \
 	libappindicator-gtk3 \
+	NetworkManager-config-connectivity-fedora \
 	okular \
+	PackageKit-command-not-found \
 	pam-kwallet \
 	phonon-qt5-backend-gstreamer \
 	pinentry-qt \
 	plasma-breeze \
+	plasma-desktop \
 	plasma-desktop-doc \
 	plasma-discover \
 	plasma-discover-notifier \
@@ -106,10 +100,16 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	plasma-thunderbolt \
 	plasma-vault \
 	plasma-welcome \
+	plasma-workspace \
+	plasma-workspace-wallpapers \
 	plasma-workspace-geolocation \
 	plasma-workspace-x11 \
 	polkit-kde \
+	qt5-qtbase-gui \
 	qt5-qtdeclarative \
+	sddm \
+	sddm-breeze \
+	sddm-kcm \
 	spectacle \
 	systemd-oomd-defaults \
 	udisks2 \
