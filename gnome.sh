@@ -13,7 +13,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	@"Hardware Support" \
 	@Multimedia \
 	gnome-shell \
-	gnome-session-xsession \
 	power-profiles-daemon
 
 # Applications
@@ -33,12 +32,12 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	gnome-extensions-app \
 	gnome-browser-connector \
 	kitty \
-	mpv \
+	vlc \
+	nautilus \
 	neovim \
 	openssl \
-	ranger \
 	ripgrep \
-	transmission-cli \
+	transmission \
 	unrar \
 	yt-dlp \
 	yt-dlp-fish-completion
