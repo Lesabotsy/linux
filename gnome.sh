@@ -39,7 +39,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	openssl \
 	ranger \
 	ripgrep \
-	transmission \
+	transmission-cli \
 	unrar \
 	yt-dlp \
 	yt-dlp-fish-completion
