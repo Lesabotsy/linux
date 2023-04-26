@@ -33,6 +33,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	gnome-extensions-app \
 	gnome-browser-connector \
 	kitty \
+	mpv \
 	mupdf \
 	neovim \
 	openssl \
@@ -40,7 +41,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	ripgrep \
 	transmission \
 	unrar \
-	vlc \
 	yt-dlp \
 	yt-dlp-fish-completion
 
