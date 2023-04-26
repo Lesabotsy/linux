@@ -34,9 +34,9 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	gnome-browser-connector \
 	kitty \
 	mupdf \
-	nautilus \
 	neovim \
 	openssl \
+	ranger \
 	ripgrep \
 	transmission \
 	unrar \
