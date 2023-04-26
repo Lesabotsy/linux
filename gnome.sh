@@ -37,7 +37,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	neovim \
 	openssl \
 	ripgrep \
-	transmission \
+	transmission-cli \
 	unrar \
 	yt-dlp \
 	yt-dlp-fish-completion
