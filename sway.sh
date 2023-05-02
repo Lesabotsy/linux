@@ -16,6 +16,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 dnf --setopt=install_weak_deps=False --best install -y \
 	@fonts \
 	dmenu \
+	i3status \
 	sway
 
 dnf --setopt=install_weak_deps=False --best install -y \
