@@ -32,7 +32,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	gnome-extensions-app \
 	gnome-browser-connector \
 	kitty \
-	nautilus \
+	nautilus gfs-mtp \
 	neovim \
 	openssl \
 	ripgrep \
