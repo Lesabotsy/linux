@@ -63,7 +63,7 @@ dnf install -y google-chrome-stable_current_x86_64.rpm
 # SETUP
 dnf --setopt=install_weak_deps=False --best install -y \
 	python3-pip \
-	java-17-openjdk-devel \
+	java-latest-openjdk-devel \
 	gcc gcc-c++ gdb valgrind \
 	nodejs npm
 
