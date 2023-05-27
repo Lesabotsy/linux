@@ -36,6 +36,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	curl \
 	exa \
 	fd-find \
+	feh \
 	ffmpeg \
 	fish \
 	fzf \
