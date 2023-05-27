@@ -20,15 +20,15 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	sway
 
 dnf --setopt=install_weak_deps=False --best install -y \
+	gammastep \
+	light \
 	NetworkManager \
 	NetworkManager-wifi \
 	pavucontrol \
 	pipewire \
 	pipewire-pulseaudio \
 	power-profiles-daemon \
-	redshift \
-	rofi \
-	light
+	rofi
 
 dnf --setopt=install_weak_deps=False --best install -y \
 	aria2 \
