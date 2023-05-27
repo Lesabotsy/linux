@@ -7,30 +7,26 @@ dnf install -y \
 
 # Main
 dnf --setopt=install_weak_deps=False --best install -y \
-	@base-x \
+	@"base-x" \
 	@"Common NetworkManager Submodules" \
-	@Fonts \
+	@"Fonts" \
 	@"Hardware Support" \
-	@Multimedia \
+	@"Multimedia" \
 	gnome-shell \
 	power-profiles-daemon
 
 # Applications
 dnf --setopt=install_weak_deps=False --best install -y \
 	aria2 \
-	bat \
+	bat fd-find \
 	breeze-cursor-theme \
 	btop \
 	curl \
 	eog \
 	exa \
-	ffmpeg \
-	fd-find \
 	fish \
 	fzf \
-	gnome-tweaks \
-	gnome-extensions-app \
-	gnome-browser-connector \
+	gnome-browser-connector gnome-extensions-app gnome-tweaks \
 	kitty \
 	nautilus gvfs-mtp \
 	neovim \
@@ -54,7 +50,6 @@ dnf install -y code
 # Programming Languages
 dnf --setopt=install_weak_deps=False --best install -y \
 	python3-pip \
-	java-latest-openjdk-devel \
 	gcc gcc-c++ gdb valgrind \
 	nodejs npm
 
