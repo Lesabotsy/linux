@@ -41,7 +41,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	kitty \
 	mpv \
 	mupdf \
-	neovim ripgrep \
+	neovim \
 	openssl \
 	ranger \
 	transmission \
@@ -60,17 +60,15 @@ dnf --setopt=install_weak_deps=False --best install -y code
 
 # SETUP
 dnf --setopt=install_weak_deps=False --best install -y \
-	python3-pip \
-	java-latest-openjdk-devel \
+	python3-pip python3-autopep8 \
+	java-17-openjdk-devel \
 	gcc gcc-c++ gdb valgrind \
 	nodejs npm
 
 # RICE
 dnf --setopt=install_weak_deps=False --best install -y \
-	arc-theme \
-	breeze-cursor-theme \
-	lxappearance \
-	papirus-icon-theme
+	arc-theme breeze-cursor-theme papirus-icon-theme \
+	lxappearance
 
 # HOSTNAME
 hostnamectl set-hostname thinkpad
