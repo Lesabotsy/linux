@@ -19,8 +19,8 @@ apt install --no-install-recommends -y \
 	gwenview \
 	kde-spectacle \
 	mpv \
+ 	mupdf \
 	neovim \
-	okular okular-extra-backends \
 	transmission \
 	unzip unrar-free \
 	yt-dlp \
