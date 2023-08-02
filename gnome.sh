@@ -15,27 +15,28 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	gnome-shell \
 	power-profiles-daemon
 
-# Applications
+# Gnome Applications
 dnf --setopt=install_weak_deps=False --best install -y \
-	aria2 \
-	bat \
-	breeze-cursor-theme \
-	curl \
 	eog \
+ 	breeze-cursor-theme papirus-icon-theme \
+  	gnome-browser-connector gnome-extensions-app gnome-tweaks \
+   	nautilus gvfs-mtp
+ 
+# Main Applications
+dnf --setopt=install_weak_deps=False --best install -y \
+	bat fd-find \
+	curl \
 	exa \
-	fd-find \
 	fish \
 	fzf \
-	gnome-browser-connector gnome-extensions-app gnome-tweaks \
 	kitty \
 	mpv \
 	mupdf \
-	nautilus gvfs-mtp \
 	neovim \
 	openssl \
 	transmission \
 	unrar \
-	yt-dlp yt-dlp-fish-completion
+	yt-dlp yt-dlp-fish-completion aria2
 
 # Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
