@@ -42,13 +42,16 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	kitty \
 	mpv \
 	mupdf \
- 	neovim \
 	openssl \
 	ranger \
 	transmission \
 	unrar \
 	xclip \
 	yt-dlp yt-dlp-fish-completion aria2
+
+# HELIX
+dnf copr enable -y varlad/helix
+dnf install -y helix
 
 # CHROME
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
