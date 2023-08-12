@@ -63,8 +63,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	java-17-openjdk-devel \
 	gcc gcc-c++ gdb valgrind \
 	clang clang-tools-extra \
-	nodejs npm \
-	rust rust-analyzer
+	nodejs npm
 
 dnf --setopt=install_weak_deps=False --best update
 
