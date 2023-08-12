@@ -70,8 +70,7 @@ dnf --setopt=install_weak_deps=False --best update
 npm install -g \
 	bash-language-server \
 	pyright \
-	typescript \
-	typescript-language-server \
+	typescript typescript-language-server \
 	vscode-langservers-extracted
 
 # RICE
