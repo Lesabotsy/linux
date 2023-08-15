@@ -13,6 +13,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	@"Hardware Support" \
 	@"Multimedia" \
 	gnome-shell \
+ 	gnome-session-xsession \
 	power-profiles-daemon
 
 # Gnome Applications
