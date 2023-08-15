@@ -37,7 +37,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	shfmt \
 	transmission \
 	unrar \
-	yt-dlp yt-dlp-fish-completion aria2
+	yt-dlp-fish-completion aria2
 
 # Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
