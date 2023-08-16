@@ -48,22 +48,20 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	transmission \
 	unrar \
 	xclip \
-	yt-dlp yt-dlp-fish-completion aria2
+	yt-dlp-fish-completion aria2
 
 # CHROME
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 dnf install -y google-chrome-stable_current_x86_64.rpm
 
-# HELIX + LANGUAGES + LSP
-dnf copr enable -y varlad/helix
-dnf install -y helix
-
+# LANGUAGES + LSP
 dnf --setopt=install_weak_deps=False --best install -y \
 	python3-pip \
 	java-17-openjdk-devel \
 	gcc gcc-c++ gdb valgrind \
 	clang clang-tools-extra \
-	nodejs npm
+	nodejs npm \
+ 	rust cargo rust-analyzer
 
 dnf --setopt=install_weak_deps=False --best update
 
