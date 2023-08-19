@@ -59,13 +59,11 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	python3-pip \
 	java-17-openjdk-devel \
 	gcc gcc-c++ gdb valgrind clang-tools-extra \
-	nodejs npm \
- 	rust cargo rust-analyzer
+	nodejs npm
 
 dnf --setopt=install_weak_deps=False --best update
 
 npm install -g \
-	bash-language-server \
 	pyright \
 	typescript typescript-language-server \
 	vscode-langservers-extracted
