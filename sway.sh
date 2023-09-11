@@ -42,6 +42,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	kitty \
 	mpv \
 	mupdf \
+ 	neovim \
 	openssl \
 	ranger \
 	shfmt \
@@ -60,14 +61,12 @@ sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.micros
 dnf check-update
 dnf install -y code
 
-# LANGUAGES + LSP
+# LANGUAGES
 dnf --setopt=install_weak_deps=False --best install -y \
 	python3-pip black \
 	java-17-openjdk-devel \
 	gcc gcc-c++ gdb valgrind \
 	nodejs npm
-
-dnf --setopt=install_weak_deps=False --best update
 
 # RICE
 dnf --setopt=install_weak_deps=False --best install -y \
