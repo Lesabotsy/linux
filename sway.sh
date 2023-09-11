@@ -54,20 +54,20 @@ dnf --setopt=install_weak_deps=False --best install -y \
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 dnf install -y google-chrome-stable_current_x86_64.rpm
 
+# VSCODE
+rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
+dnf check-update
+dnf install -y code
+
 # LANGUAGES + LSP
 dnf --setopt=install_weak_deps=False --best install -y \
 	python3-pip black \
 	java-17-openjdk-devel \
-	gcc gcc-c++ gdb valgrind clang-tools-extra \
+	gcc gcc-c++ gdb valgrind \
 	nodejs npm
 
 dnf --setopt=install_weak_deps=False --best update
-
-npm install -g \
-	bash-language-server \
-	pyright \
-	typescript typescript-language-server \
-	vscode-langservers-extracted
 
 # RICE
 dnf --setopt=install_weak_deps=False --best install -y \
