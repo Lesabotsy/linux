@@ -55,7 +55,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 dnf install -y google-chrome-stable_current_x86_64.rpm
 
-# LANGUAGES
+# LANGUAGES & TOOLS
 dnf --setopt=install_weak_deps=False --best install -y \
 	python3-pip black \
 	java-17-openjdk-devel \
