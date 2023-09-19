@@ -39,7 +39,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	fish \
 	fzf \
 	kitty \
- 	lsd \
 	mpv \
 	mupdf \
 	openssl \
