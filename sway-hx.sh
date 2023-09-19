@@ -57,7 +57,6 @@ dnf install -y google-chrome-stable_current_x86_64.rpm
 # LANGUAGES & TOOLS
 dnf --setopt=install_weak_deps=False --best install -y \
 	python3-pip black \
-	java-17-openjdk-devel \
 	gcc gcc-c++ gdb valgrind clang-tools-extra \
 	nodejs npm
 
