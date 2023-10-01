@@ -60,8 +60,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
     nodejs npm \
     rust cargo rust-analyzer
 
-dnf --setopt=install_weak_deps=False --best update -y
-
 npm install -g \
     bash-language-server \
     pyright \
