@@ -40,7 +40,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
     fzf \
     kitty \
     mpv \
-    mupdf \
     openssl \
     ranger \
     shfmt \
