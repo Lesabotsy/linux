@@ -54,6 +54,7 @@ dnf install -y google-chrome-stable_current_x86_64.rpm
 
 # LANGUAGES & TOOLS
 dnf --setopt=install_weak_deps=False --best install -y \
+    clang clang-tools-extra \
     rust cargo rust-analyzer
 
 # RICE
