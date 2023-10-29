@@ -3,17 +3,17 @@
 mkdir /media/usb/
 
 # HARDWARE SUPPORT
-dnf --setopt=install_weak_deps=False --best install -y \
+apt install --no-install-recommends -y \
     intel-media-va-driver \
     firmware-iwlwifi
 
 # BASE
-dnf --setopt=install_weak_deps=False --best install -y \
+apt install --no-install-recommends -y \
     dmenu \
     i3status \
     sway
 
-dnf --setopt=install_weak_deps=False --best install -y \
+apt install --no-install-recommends -y \
     gammastep \
     light \
     network-manager \
@@ -22,7 +22,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
     pipewire-pulse \
     rofi
 
-dnf --setopt=install_weak_deps=False --best install -y \
+apt install --no-install-recommends -y \
     aria2 \
     bat fd-find \
     curl \
@@ -66,7 +66,7 @@ npm install -g \
 curl -sS https://starship.rs/install.sh | sh
 
 # RICE
-dnf --setopt=install_weak_deps=False --best install -y \
+apt install --no-install-recommends -y \
     arc-theme breeze-cursor-theme papirus-icon-theme \
     lxappearance
 
