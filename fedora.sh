@@ -32,6 +32,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
     rofi
 
 dnf --setopt=install_weak_deps=False --best install -y \
+    aria2 \
     bat fd-find \
     curl \
     feh \
@@ -45,8 +46,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
     shfmt \
     transmission \
     unrar \
-    xclip \
-    yt-dlp-fish-completion aria2
+    xclip
 
 # CHROME
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
