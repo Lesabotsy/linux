@@ -27,6 +27,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
     pavucontrol \
     pipewire \
     pipewire-pulseaudio \
+    power-profiles-daemon \
     pulseaudio-utils \
     rofi
 
@@ -53,8 +54,16 @@ dnf install -y google-chrome-stable_current_x86_64.rpm
 
 # LANGUAGES & TOOLS
 dnf --setopt=install_weak_deps=False --best install -y \
-    clang clang-tools-extra \
+    python3-pip black \
+    gcc gcc-c++ gdb valgrind clang-tools-extra \
+    nodejs npm \
     rust cargo rust-analyzer
+
+npm install -g \
+    bash-language-server \
+    pyright \
+    typescript typescript-language-server \
+    vscode-langservers-extracted
 
 # RICE
 dnf --setopt=install_weak_deps=False --best install -y \
