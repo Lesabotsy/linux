@@ -28,7 +28,6 @@ apt install --no-install-recommends -y \
     curl \
     feh \
     ffmpeg \
-    firefox-esr \
     fish \
     fzf \
     kitty \
@@ -40,6 +39,12 @@ apt install --no-install-recommends -y \
     transmission \
     unzip unrar-free \
     xclip
+
+# CHROME
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+dpkg --install google-chrome-stable_current_amd64.deb
+rm google-chrome-stable_current_amd64.deb
+apt install -f -y
 
 # PROGRAMMING LANGUAGES
 apt install --no-install-recommends -y \
