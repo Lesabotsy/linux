@@ -61,7 +61,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
     rust cargo rust-analyzer
 
 npm install -g \
-    bash-language-server \
     pyright \
     typescript typescript-language-server \
     vscode-langservers-extracted
