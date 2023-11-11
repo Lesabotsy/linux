@@ -24,23 +24,20 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	curl \
 	eog \
 	exa \
+        firefox \
 	fish \
 	fzf \
 	gnome-browser-connector gnome-extensions-app gnome-tweaks \
 	kitty \
+        mpv \
 	nautilus gvfs-mtp \
 	neovim \
 	openssl \
 	ripgrep \
 	transmission \
 	unrar \
-	vlc \
 	yt-dlp \
 	yt-dlp-fish-completion
-
-# Chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
-dnf install -y google-chrome-stable_current_x86_64.rpm
 
 # VSCode
 rpm --import https://packages.microsoft.com/keys/microsoft.asc
