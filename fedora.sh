@@ -7,9 +7,8 @@ dnf install -y \
     https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
     https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-# HARDWARE SUPPORT
+# WIFI
 dnf --setopt=install_weak_deps=False --best install -y \
-    intel-media-driver \
     iwl7260-firmware
 
 # BASE
