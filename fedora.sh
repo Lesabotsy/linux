@@ -36,7 +36,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
 
 dnf --setopt=install_weak_deps=False --best install -y \
     aria2 \
-    bat fd-find \
     curl \
     feh \
     ffmpeg \
