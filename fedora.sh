@@ -46,7 +46,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
     mupdf \
     openssl \
     ranger \
-    shfmt \
     transmission \
     unrar \
     xclip
@@ -54,18 +53,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
 # CHROME
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 dnf install -y google-chrome-stable_current_x86_64.rpm
-
-# LANGUAGES & TOOLS
-dnf --setopt=install_weak_deps=False --best install -y \
-    python3-pip black \
-    gcc gcc-c++ gdb valgrind clang-tools-extra \
-    nodejs npm \
-    rust cargo rust-analyzer
-
-npm install -g \
-    pyright \
-    typescript typescript-language-server \
-    vscode-langservers-extracted
 
 # RICE
 dnf --setopt=install_weak_deps=False --best install -y \
