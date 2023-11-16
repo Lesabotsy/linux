@@ -28,6 +28,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	pipewire \
 	pipewire-pulseaudio \
 	power-profiles-daemon \
+        pulseaudio-utils \
 	redshift \
 	rofi \
 	xbacklight
