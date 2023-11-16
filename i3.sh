@@ -36,36 +36,22 @@ dnf --setopt=install_weak_deps=False --best install -y \
 
 dnf --setopt=install_weak_deps=False --best install -y \
 	aria2 \
-	bat \
 	curl \
-	exa \
-	fd-find \
 	ffmpeg \
 	fish \
 	fzf \
 	kitty \
 	mpv \
 	mupdf \
-	neovim \
 	openssl \
-	ripgrep \
 	ranger \
 	transmission \
 	unrar \
-	xclip \
-	yt-dlp \
-	yt-dlp-fish-completion
+	xclip
 
 # CHROME
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
 dnf install -y google-chrome-stable_current_x86_64.rpm
-
-# SETUP
-dnf --setopt=install_weak_deps=False --best install -y \
-	python3-pip \
-	java-latest-openjdk-devel \
-	gcc gcc-c++ gdb valgrind \
-	nodejs npm
 
 # RICE
 dnf --setopt=install_weak_deps=False --best install -y \
