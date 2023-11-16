@@ -21,9 +21,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	i3status
 
 dnf --setopt=install_weak_deps=False --best install -y \
-	acpi \
-	feh \
-	NetworkManager \
+        NetworkManager \
 	NetworkManager-wifi \
 	pavucontrol \
 	picom \
@@ -35,6 +33,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	xbacklight
 
 dnf --setopt=install_weak_deps=False --best install -y \
+	acpi \
 	aria2 \
 	curl \
 	ffmpeg \
