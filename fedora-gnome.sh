@@ -9,23 +9,23 @@ dnf install -y \
 dnf install -y \
 	breeze-cursor-theme \
 	eog \
+ 	fish \
 	gnome-shell \
  	gnome-tweaks \
 	gnome-extensions-app \
 	gnome-browser-connector \
  	kitty \
   	mpv \
- 	nautilus
+ 	nautilus \
+  	transmission \
 
 # Applications
 dnf --setopt=install_weak_deps=False --best install -y \
 	aria2 \
 	curl \
 	ffmpeg \
-	fish \
 	fzf \
 	openssl \
-	transmission \
 	unrar \
  	unzip
 
