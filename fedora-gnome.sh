@@ -5,42 +5,31 @@ dnf install -y \
 	https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
 	https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-# Main
-dnf --setopt=install_weak_deps=False --best install -y \
-	@base-x \
-	@"Common NetworkManager Submodules" \
-	@Fonts \
-	@"Hardware Support" \
-	@Multimedia \
+
+# Base
+dnf install -y \
 	gnome-shell \
-	power-profiles-daemon
+ 	gnome-tweaks \
+	gnome-extensions-app \
+	gnome-browser-connector \
+ 	nautilus \
 
 # Applications
 dnf --setopt=install_weak_deps=False --best install -y \
+	acpi \
 	aria2 \
-	bat \
-	breeze-cursor-theme \
-	btop \
+ 	breeze-cursor-theme \
 	curl \
-	eog \
-	exa \
+ 	eog \
 	ffmpeg \
-	fd-find \
+	feh \
 	fish \
 	fzf \
-	gnome-tweaks \
-	gnome-extensions-app \
-	gnome-browser-connector \
 	kitty \
-	nautilus gvfs-mtp \
-	neovim \
+	mpv \
 	openssl \
-	ripgrep \
 	transmission \
-	unrar \
-	vlc \
-	yt-dlp \
-	yt-dlp-fish-completion
+	unrar
 
 # Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
@@ -51,18 +40,11 @@ rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 dnf install -y code
 
-# Programming Languages
-dnf --setopt=install_weak_deps=False --best install -y \
-	python3-pip \
-	java-latest-openjdk-devel \
-	gcc gcc-c++ gdb valgrind \
-	nodejs npm
-
 # Starship
 curl -sS https://starship.rs/install.sh | sh
 
 # Removing some Packages
-dnf remove -y nano vim-minimal
+dnf remove -y vim-minimal
 
 # Reboot
 systemctl set-default graphical.target
