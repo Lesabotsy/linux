@@ -5,31 +5,29 @@ dnf install -y \
 	https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
 	https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-
 # Base
 dnf install -y \
+	breeze-cursor-theme \
+	eog \
 	gnome-shell \
  	gnome-tweaks \
 	gnome-extensions-app \
 	gnome-browser-connector \
- 	nautilus \
+ 	kitty \
+ 	nautilus
 
 # Applications
 dnf --setopt=install_weak_deps=False --best install -y \
-	acpi \
 	aria2 \
- 	breeze-cursor-theme \
 	curl \
- 	eog \
 	ffmpeg \
-	feh \
 	fish \
 	fzf \
-	kitty \
 	mpv \
 	openssl \
 	transmission \
-	unrar
+	unrar \
+ 	unzip
 
 # Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
