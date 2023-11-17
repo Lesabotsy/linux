@@ -14,6 +14,7 @@ dnf install -y \
 	gnome-extensions-app \
 	gnome-browser-connector \
  	kitty \
+  	mpv \
  	nautilus
 
 # Applications
@@ -23,7 +24,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
 	ffmpeg \
 	fish \
 	fzf \
-	mpv \
 	openssl \
 	transmission \
 	unrar \
