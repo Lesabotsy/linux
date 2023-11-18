@@ -44,7 +44,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
     kitty \
     mpv \
     mupdf \
-    neovim \
     openssl \
     ranger \
     transmission \
