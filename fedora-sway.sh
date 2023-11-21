@@ -70,14 +70,12 @@ dnf --setopt=install_weak_deps=False --best install -y \
     code
 
 dnf --setopt=install_weak_deps=False --best install -y \
-    cargo \
     gcc \
     gcc-c++ \
     gdb \
     nodejs \
     npm \
     python3-pip \
-    rust \
     valgrind
 
 # HOSTNAME
