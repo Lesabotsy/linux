@@ -46,6 +46,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
     mupdf \
     openssl \
     ranger \
+    shfmt \
     transmission \
     unrar \
     xclip
