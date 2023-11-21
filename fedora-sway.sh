@@ -67,7 +67,7 @@ dnf check-update
 dnf --setopt=install_weak_deps=False --best install -y code
 
 dnf --setopt=install_weak_deps=False --best install -y \
-    gcc gdb valgrind clang-tools-extra \
+    gcc gcc-c++ gdb valgrind clang-tools-extra \
     nodejs npm \
     python3-pip black \
     rust cargo rust-analyzer
