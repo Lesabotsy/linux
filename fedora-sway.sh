@@ -41,6 +41,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
     ffmpeg \
     fish \
     fzf \
+    helix \
     kitty \
     mpv \
     mupdf \
