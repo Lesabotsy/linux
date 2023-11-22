@@ -76,6 +76,12 @@ dnf --setopt=install_weak_deps=False --best install -y \
     rust-analyzer \
     valgrind
 
+npm install -g \
+    pyright \
+    typescript \
+    typescript-language-server \
+    vscode-langservers-extracted
+
 # HOSTNAME
 hostnamectl set-hostname thinkpad
 
