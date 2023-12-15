@@ -40,7 +40,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
     curl \
     feh \
     ffmpeg \
-    firefox \
     fish \
     fzf \
     helix \
@@ -53,6 +52,10 @@ dnf --setopt=install_weak_deps=False --best install -y \
     transmission \
     unrar \
     xclip
+
+# CHROME
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
+dnf install -y google-chrome-stable_current_x86_64.rpm
 
 # RICE
 dnf --setopt=install_weak_deps=False --best install -y \
