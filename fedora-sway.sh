@@ -62,7 +62,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
 # PROGRAMMING STUFF
 dnf --setopt=install_weak_deps=False --best install -y \
     black \
-    cargo \
     clang-tools-extra \
     gcc \
     gcc-c++ \
@@ -70,8 +69,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
     nodejs \
     npm \
     python3-pip \
-    rust \
-    rust-analyzer \
     valgrind
 
 npm install -g \
