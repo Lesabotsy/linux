@@ -67,7 +67,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
     gdb \
     nodejs \
     npm \
-    python3-pip \
     valgrind
 
 npm install -g \
