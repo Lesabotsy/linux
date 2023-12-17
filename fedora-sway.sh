@@ -64,7 +64,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
     black \
     clang-tools-extra \
     gcc \
-    gcc-c++ \
     gdb \
     nodejs \
     npm \
