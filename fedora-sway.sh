@@ -61,16 +61,10 @@ dnf --setopt=install_weak_deps=False --best install -y \
 
 #  PROGRAMMING STUFF
 dnf --setopt=install_weak_deps=False --best install -y \
-    black \
-    clang-tools-extra \
-    gcc \
-    gdb \
     nodejs \
-    npm \
-    valgrind
+    npm
 
 npm install -g \
-    pyright \
     typescript \
     typescript-language-server \
     vscode-langservers-extracted
