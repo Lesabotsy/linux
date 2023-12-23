@@ -58,16 +58,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
 dnf --setopt=install_weak_deps=False --best install -y \
     arc-theme breeze-cursor-theme papirus-icon-theme \
     lxappearance
-
-#  PROGRAMMING STUFF
-dnf --setopt=install_weak_deps=False --best install -y \
-    nodejs \
-    npm
-
-npm install -g \
-    typescript \
-    typescript-language-server \
-    vscode-langservers-extracted
     
 # HOSTNAME
 hostnamectl set-hostname thinkpad
