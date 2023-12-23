@@ -38,6 +38,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
     aria2 \
     bat \
     curl \
+    distrobox \
     feh \
     ffmpeg \
     firefox \
@@ -48,6 +49,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
     mpv \
     mupdf \
     openssl \
+    podman \
     ranger \
     shfmt \
     transmission \
