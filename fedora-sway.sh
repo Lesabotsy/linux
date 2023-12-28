@@ -11,10 +11,6 @@ dnf install -y \
 dnf --setopt=install_weak_deps=False --best install -y \
     iwl7260-firmware
 
-# VAAPI
-dnf --setopt=install_weak_deps=False --best install -y \
-    intel-media-driver
-
 # BASE
 dnf --setopt=install_weak_deps=False --best install -y \
     @fonts \
@@ -35,25 +31,13 @@ dnf --setopt=install_weak_deps=False --best install -y \
     rofi
 
 dnf --setopt=install_weak_deps=False --best install -y \
-    aria2 \
-    bat \
-    curl \
     distrobox \
     feh \
-    ffmpeg \
-    firefox \
     fish \
-    fzf \
     helix \
     kitty \
-    mpv \
-    mupdf \
-    openssl \
     podman \
     ranger \
-    shfmt \
-    transmission \
-    unrar \
     xclip
 
 # RICE
