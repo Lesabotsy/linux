@@ -38,8 +38,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 dnf --setopt=install_weak_deps=False --best install -y \
     distrobox \
     podman \
-   
-
+    
 # RICE
 dnf --setopt=install_weak_deps=False --best install -y \
     arc-theme breeze-cursor-theme papirus-icon-theme \
