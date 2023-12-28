@@ -19,7 +19,11 @@ dnf --setopt=install_weak_deps=False --best install -y \
     sway
 
 dnf --setopt=install_weak_deps=False --best install -y \
+    feh \
+    fish \
     gammastep \
+    helix \
+    kitty \
     light \
     NetworkManager \
     NetworkManager-wifi \
@@ -28,17 +32,13 @@ dnf --setopt=install_weak_deps=False --best install -y \
     pipewire-pulseaudio \
     power-profiles-daemon \
     pulseaudio-utils \
+    ranger \
     rofi
 
 dnf --setopt=install_weak_deps=False --best install -y \
     distrobox \
-    feh \
-    fish \
-    helix \
-    kitty \
     podman \
-    ranger \
-    xclip
+   
 
 # RICE
 dnf --setopt=install_weak_deps=False --best install -y \
