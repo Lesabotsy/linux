@@ -20,9 +20,13 @@ dnf --setopt=install_weak_deps=False --best install -y \
 
 dnf --setopt=install_weak_deps=False --best install -y \
     feh \
+    ffmpeg \
+    firefox \
     fish \
+    fzf \
     gammastep \
     helix \
+    intel-media-driver \
     kitty \
     light \
     NetworkManager \
@@ -33,7 +37,8 @@ dnf --setopt=install_weak_deps=False --best install -y \
     power-profiles-daemon \
     pulseaudio-utils \
     ranger \
-    rofi
+    rofi \
+    shfmt
 
 dnf --setopt=install_weak_deps=False --best install -y \
     distrobox \
