@@ -20,6 +20,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 
 dnf --setopt=install_weak_deps=False --best install -y \
     bat \
+    distrobox \
     fd-find \
     feh \
     ffmpeg \
@@ -38,16 +39,13 @@ dnf --setopt=install_weak_deps=False --best install -y \
     pavucontrol \
     pipewire \
     pipewire-pulseaudio \
+    podman \
     power-profiles-daemon \
     pulseaudio-utils \
     ranger \
     rofi \
     shfmt \
     unrar
-
-dnf --setopt=install_weak_deps=False --best install -y \
-    distrobox \
-    podman \
     
 # RICE
 dnf --setopt=install_weak_deps=False --best install -y \
