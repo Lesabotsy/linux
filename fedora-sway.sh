@@ -19,6 +19,8 @@ dnf --setopt=install_weak_deps=False --best install -y \
     sway
 
 dnf --setopt=install_weak_deps=False --best install -y \
+    bat \
+    fd-find \
     feh \
     ffmpeg \
     firefox \
@@ -29,6 +31,8 @@ dnf --setopt=install_weak_deps=False --best install -y \
     intel-media-driver \
     kitty \
     light \
+    mpv \
+    mupdf \
     NetworkManager \
     NetworkManager-wifi \
     pavucontrol \
@@ -38,7 +42,8 @@ dnf --setopt=install_weak_deps=False --best install -y \
     pulseaudio-utils \
     ranger \
     rofi \
-    shfmt
+    shfmt \
+    unrar
 
 dnf --setopt=install_weak_deps=False --best install -y \
     distrobox \
