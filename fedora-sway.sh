@@ -49,7 +49,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
     
 # RICE
 dnf --setopt=install_weak_deps=False --best install -y \
-    adw-gtk3-theme breeze-cursor-theme papirus-icon-theme \
+    breeze-cursor-theme papirus-icon-theme \
     lxappearance
     
 # HOSTNAME
