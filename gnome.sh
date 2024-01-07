@@ -13,7 +13,7 @@ dnf install -y \
     fish \
     fzf \
     helix \
-    kitty \
+    gnome-console \
     gnome-shell \
     gnome-shell-extension-user-theme \
     nautilus \
