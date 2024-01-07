@@ -29,7 +29,9 @@ dnf install -y \
     gnome-tweaks
     
 dnf remove -y \
-    gnome-tour
+    gnome-tour \
+    nano \
+    vim-minimal
     
 hostnamectl set-hostname desktop
 systemctl set-default graphical.target
