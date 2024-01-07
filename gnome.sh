@@ -15,7 +15,6 @@ dnf install -y \
     helix \
     gnome-console \
     gnome-shell \
-    gnome-shell-extension-pop-shell \
     gnome-shell-extension-user-theme \
     nautilus \
     podman \
