@@ -26,7 +26,10 @@ dnf install -y \
     adw-gtk3-theme \
     breeze-cursor-theme \
     gnome-tweaks
-
+    
+dnf remove -y \
+    gnome-tour
+    
 hostnamectl set-hostname desktop
 systemctl set-default graphical.target
 reboot
