@@ -14,7 +14,6 @@ dnf install -y \
     fzf \
     helix \
     kitty \
-    gnome-browser-connector \
     gnome-shell \
     gnome-shell-extension-user-theme \
     nautilus \
