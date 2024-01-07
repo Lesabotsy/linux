@@ -25,7 +25,6 @@ dnf install -y \
 
 dnf install -y \
     adw-gtk3-theme \
-    breeze-cursor-theme \
     gnome-tweaks
     
 dnf remove -y \
