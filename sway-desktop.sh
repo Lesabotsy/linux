@@ -31,7 +31,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
     helix \
     intel-media-driver \
     kitty \
-    light \
     mpv \
     mupdf \
     NetworkManager \
