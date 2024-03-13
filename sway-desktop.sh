@@ -52,7 +52,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
     lxappearance
     
 # HOSTNAME
-hostnamectl set-hostname thinkpad
+hostnamectl set-hostname desktop
 
 # STARSHIP
 curl -sS https://starship.rs/install.sh | sh
