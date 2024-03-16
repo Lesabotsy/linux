@@ -34,6 +34,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
     mpv \
     mupdf \
     NetworkManager \
+    NetworkManager-bluetooth \
     NetworkManager-wifi \
     pavucontrol \
     pipewire \
