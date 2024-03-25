@@ -20,7 +20,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
 
 dnf --setopt=install_weak_deps=False --best install -y \
     bat \
-    distrobox \
     fd-find \
     feh \
     ffmpeg \
@@ -48,6 +47,9 @@ dnf --setopt=install_weak_deps=False --best install -y \
     shfmt \
     unrar
     
+# DISTROBOX
+curl -s https://raw.githubusercontent.com/89luca89/distrobox/main/install | sudo sh
+
 # RICE
 dnf --setopt=install_weak_deps=False --best install -y \
     breeze-cursor-theme papirus-icon-theme \
