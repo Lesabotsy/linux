@@ -33,7 +33,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
     kitty \
     light \
     mpv \
-    mupdf \
     NetworkManager \
     NetworkManager-bluetooth \
     NetworkManager-wifi \
