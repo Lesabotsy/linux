@@ -32,7 +32,6 @@ dnf --setopt=install_weak_deps=False --best install -y \
     intel-media-driver \
     kitty \
     mpv \
-    mupdf \
     NetworkManager \
     NetworkManager-bluetooth \
     NetworkManager-wifi \
