@@ -9,7 +9,7 @@ dnf install -y \
 
 # WIFI
 dnf --setopt=install_weak_deps=False --best install -y \
-    iwl7260-firmware
+    iwlwifi-mvm-firmware
 
 # BASE
 dnf --setopt=install_weak_deps=False --best install -y \
