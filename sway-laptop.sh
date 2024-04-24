@@ -13,15 +13,11 @@ dnf --setopt=install_weak_deps=False --best install -y \
 
 # BASE
 dnf --setopt=install_weak_deps=False --best install -y \
-    @fonts \
-    dmenu \
-    i3status \
+    foot \
     sway
 
 dnf --setopt=install_weak_deps=False --best install -y \
-    bat \
     distrobox \
-    fd-find \
     feh \
     ffmpeg \
     firefox \
