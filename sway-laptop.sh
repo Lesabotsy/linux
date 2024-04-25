@@ -22,11 +22,9 @@ dnf --setopt=install_weak_deps=False --best install -y \
     ffmpeg \
     firefox \
     fish \
-    fzf \
     gammastep \
     helix \
     intel-media-driver \
-    kitty \
     light \
     mpv \
     mupdf \
