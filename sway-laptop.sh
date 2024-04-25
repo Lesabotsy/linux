@@ -14,7 +14,7 @@ dnf --setopt=install_weak_deps=False --best install -y \
 # BASE
 dnf --setopt=install_weak_deps=False --best install -y \
     sway \
-    foot \
+    kitty \
     i3status \
     feh \
     fish \
