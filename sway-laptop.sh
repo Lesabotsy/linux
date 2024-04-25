@@ -26,8 +26,8 @@ dnf --setopt=install_weak_deps=False --best install -y \
     pavucontrol \
     pipewire \
     pipewire-pulseaudio \
-    power-profiles-daemon \
     pulseaudio-utils \
+    power-profiles-daemon \
     ranger \
     rofi    
 
