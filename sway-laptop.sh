@@ -13,34 +13,32 @@ dnf --setopt=install_weak_deps=False --best install -y \
 
 # BASE
 dnf --setopt=install_weak_deps=False --best install -y \
+    sway \
     foot \
-    sway
-
-dnf --setopt=install_weak_deps=False --best install -y \
-    distrobox \
+    i3status \
     feh \
-    ffmpeg \
-    firefox \
     fish \
     gammastep \
-    helix \
-    intel-media-driver \
     light \
-    mpv \
-    mupdf \
     NetworkManager \
     NetworkManager-bluetooth \
     NetworkManager-wifi \
     pavucontrol \
     pipewire \
     pipewire-pulseaudio \
-    podman \
     power-profiles-daemon \
     pulseaudio-utils \
     ranger \
-    rofi \
-    shfmt \
-    unrar
+    rofi    
+
+dnf --setopt=install_weak_deps=False --best install -y \
+    podman \
+    distrobox \
+    ffmpeg \
+    firefox \
+    intel-media-driver \
+    mpv \
+    mupdf
     
 # RICE
 dnf --setopt=install_weak_deps=False --best install -y \
