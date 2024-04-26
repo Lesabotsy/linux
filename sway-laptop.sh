@@ -8,14 +8,15 @@ dnf install -y \
     https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # WIFI
-dnf --setopt=install_weak_deps=False --best install -y \
+dnf install -y \
     iwlwifi-mvm-firmware
 
 # BASE
-dnf --setopt=install_weak_deps=False --best install -y \
+dnf install -y \
     sway \
     kitty \
     i3status \
+    intel-media-driver \
     feh \
     fish \
     gammastep \
@@ -28,28 +29,23 @@ dnf --setopt=install_weak_deps=False --best install -y \
     pipewire-pulseaudio \
     pulseaudio-utils \
     power-profiles-daemon \
-    ranger \
-    rofi    
+    rofi
 
-dnf --setopt=install_weak_deps=False --best install -y \
+dnf install -y \
     podman \
     distrobox \
-    ffmpeg \
     firefox \
-    intel-media-driver \
+    ffmpeg \
     mpv \
-    mupdf
+    mupdf \
+    ranger
     
 # RICE
-dnf --setopt=install_weak_deps=False --best install -y \
-    breeze-cursor-theme papirus-icon-theme \
-    lxappearance
+dnf install -y \
+    breeze-cursor-theme papirus-icon-theme
     
 # HOSTNAME
 hostnamectl set-hostname thinkpad
 
 # STARSHIP
 curl -sS https://starship.rs/install.sh | sh
-
-# DONE
-reboot
