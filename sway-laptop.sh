@@ -29,7 +29,8 @@ dnf install -y \
     pipewire-pulseaudio \
     pulseaudio-utils \
     power-profiles-daemon \
-    rofi
+    rofi \
+    seatd
 
 dnf install -y \
     podman \
