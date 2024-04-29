@@ -37,6 +37,7 @@ dnf install -y \
     distrobox \
     firefox \
     ffmpeg \
+    fzf \
     mpv \
     mupdf \
     ranger
