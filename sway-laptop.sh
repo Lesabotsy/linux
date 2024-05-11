@@ -1,5 +1,9 @@
 #!/bin/bash
 
+dnf remove -y \
+    nano \
+    vim-minimal
+    
 mkdir /media/usb/
 
 # RPM FUSION
@@ -21,6 +25,7 @@ dnf install -y \
     fish \
     gammastep \
     light \
+    neovim \
     NetworkManager \
     NetworkManager-bluetooth \
     NetworkManager-wifi \
