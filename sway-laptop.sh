@@ -24,8 +24,8 @@ dnf install -y \
     feh \
     fish \
     gammastep \
+    helix \
     light \
-    neovim \
     NetworkManager \
     NetworkManager-bluetooth \
     NetworkManager-wifi \
