@@ -24,7 +24,6 @@ dnf install -y \
     feh \
     fish \
     gammastep \
-    helix \
     light \
     NetworkManager \
     NetworkManager-bluetooth \
