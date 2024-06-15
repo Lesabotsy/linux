@@ -1,7 +1,6 @@
 #!/bin/bash
 
 dnf remove -y \
-    nano \
     vim-minimal
     
 mkdir /media/usb/
