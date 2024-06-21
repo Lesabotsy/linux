@@ -45,9 +45,8 @@ dnf install -y \
     ranger
     
 # RICE
-dnf --setopt=install_weak_deps=False --best install -y \
-    breeze-cursor-theme papirus-icon-theme \
-    lxappearance
+dnf install -y \
+    breeze-cursor-theme papirus-icon-theme
     
 # HOSTNAME
 hostnamectl set-hostname desktop
