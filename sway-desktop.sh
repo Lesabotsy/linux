@@ -53,6 +53,3 @@ hostnamectl set-hostname desktop
 
 # STARSHIP
 curl -sS https://starship.rs/install.sh | sh
-
-# DONE
-reboot
