@@ -1,5 +1,8 @@
 #!/bin/bash
 
+dnf remove -y \
+    vim-minimal
+    
 mkdir /media/usb/
 
 # RPM FUSION
@@ -12,39 +15,34 @@ dnf --setopt=install_weak_deps=False --best install -y \
     mt7xxx-firmware
 
 # BASE
-dnf --setopt=install_weak_deps=False --best install -y \
-    @fonts \
-    dmenu \
-    i3status \
-    sway
-
-dnf --setopt=install_weak_deps=False --best install -y \
-    bat \
-    distrobox \
-    fd-find \
-    feh \
-    ffmpeg \
-    firefox \
-    fish \
-    fzf \
-    gammastep \
-    helix \
-    intel-media-driver \
+dnf install -y \
+    sway \
     kitty \
-    mpv \
+    i3status \
+    intel-media-driver \
+    feh \
+    fish \
+    gammastep \
     NetworkManager \
     NetworkManager-bluetooth \
     NetworkManager-wifi \
     pavucontrol \
     pipewire \
     pipewire-pulseaudio \
-    podman \
-    power-profiles-daemon \
     pulseaudio-utils \
-    ranger \
+    power-profiles-daemon \
     rofi \
-    shfmt \
-    unrar
+    seatd
+
+dnf install -y \
+    podman \
+    distrobox \
+    firefox \
+    ffmpeg \
+    fzf \
+    mpv \
+    mupdf \
+    ranger
     
 # RICE
 dnf --setopt=install_weak_deps=False --best install -y \
