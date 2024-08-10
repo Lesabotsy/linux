@@ -48,7 +48,6 @@ dnf install -y \
 
 # RICE
 dnf install -y \
-    arc-theme \
     breeze-cursor-theme \
     papirus-icon-theme
 
