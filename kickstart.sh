@@ -48,7 +48,9 @@ dnf install -y \
 
 # RICE
 dnf install -y \
-    breeze-cursor-theme papirus-icon-theme
+    arc-theme \
+    breeze-cursor-theme \
+    papirus-icon-theme
 
 # HOSTNAME
 hostnamectl set-hostname thinkpad
