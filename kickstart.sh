@@ -49,7 +49,6 @@ dnf install -y \
 # RICE
 dnf install -y \
     adw-gtk3-theme \
-    breeze-cursor-theme \
     papirus-icon-theme
 
 # HOSTNAME
