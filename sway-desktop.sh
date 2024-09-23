@@ -11,7 +11,7 @@ dnf install -y \
     https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # WIFI
-dnf --setopt=install_weak_deps=False --best install -y \
+dnf install -y \
     mt7xxx-firmware
 
 # BASE
