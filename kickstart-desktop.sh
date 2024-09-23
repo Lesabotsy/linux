@@ -47,7 +47,9 @@ dnf install -y \
     
 # RICE
 dnf install -y \
-    breeze-cursor-theme papirus-icon-theme
+    adw-gtk3-theme \
+    breeze-cursor-theme \
+    papirus-icon-theme
     
 # HOSTNAME
 hostnamectl set-hostname desktop
