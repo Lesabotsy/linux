@@ -42,7 +42,8 @@ dnf install -y \
     fzf \
     mpv \
     mupdf \
-    ranger
+    ranger \
+    unrar
     
 # RICE
 dnf install -y \
