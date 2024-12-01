@@ -1,7 +1,6 @@
 #!/bin/bash
 
 dnf remove -y \
-    nano \
     vim-minimal
 
 mkdir /media/usb/
@@ -25,7 +24,6 @@ dnf install -y \
     fish \
     gammastep \
     light \
-    micro \
     NetworkManager \
     NetworkManager-bluetooth \
     NetworkManager-wifi \
